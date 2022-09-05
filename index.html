@@ -2,13 +2,22 @@
 <html lang="en">
     <body>
     <header>
-        Hi, I'm Daniel Cisneros Siliezar!
+        <h1>ITIS 3135 | Daniel Cisneros Siliezar</h1>
     </header>
     <main>
-        <p>This is my ITIS 3135 first course page. It's also a test to see if I've done this correctly</p>
+        <h2>Welcome to Cisneros's ITIS 3135 Web Page</h2>
     </main>
     <footer>
-        Bottom of the page
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML." id = "validation_link_html"/>
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS." id = "validation_link_css"/>
+        </a>
+        <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script> 
     </footer>
 </body>
 </html>
