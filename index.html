@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>Cisneros's Web Page</title>
+    <title>
+        Cisneros's Web Page
+    </title>
     <body>
     <header>
         <h1>ITIS 3135 | Daniel Cisneros Siliezar</h1>
+        <link rel="stylesheet" href="styles/default.css">
+        
     </header>
     <main>
         <h2>Welcome to Cisneros's ITIS 3135 Web Page</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Contract')">Contract</button>
+        </div>
+        <script>
+            function openTab(evt, tabName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+        </script>
+
+        <div id="Home" class="tabcontent">
+            <h3>About Me</h3>
+            <figure>
+                <img src="images/myself.png" alt="Myself" style="width:50%">    
+                <figcaption>
+                    Random picture I took last fall
+                </figcaption>
+            </figure>
+            
+            <p>
+                Hello! My name is Daniel Cisneros Siliezar and I am from Charlotte, NC. 
+            </p>
+            <ul>
+                <li><b>Personal Background: </b>I was born in Tampa, FL, but raised in Kings Mountain, NC.</li>
+                <li><b>Professional Background: </b>I have been enlisted in the Marine Corps for 3 years working in the field of communication networks. 
+                I also work part time for a tech start-up doing web development, writing code in TypeScript and HTML5.</li>
+                <li><b>Academic Background: </b>I am majoring in Computer Science, with a concentration in Information Technology. 
+                I am also a senior at UNCC, graduating in May 2023.</li>
+                <li><b>Background in this Subject: </b>I began my interest in computing when I first learned my job in the Marines. 
+                I found that I enjoy working with technology and wanted to make money off of it. I also acquired my current job from fellow Marines at my unit.</li>
+                <li><b>Primary Computer Platform: </b>ASUS Vivo Book 17 on Windows 10 OS</li>
+                <li><b>Courses I'm Taking & Why: </b>
+                    <ul>
+                        <li><b>ITIS 3135: </b>Web App Design and Development - </li>
+                        <li><b>ITCS 3162: </b>Introduction to Data Mining - </li>
+                        <li><b>ITCS 3166: </b>Introduction to Computer Networks - </li>
+                        <li><b>ITSC 3146: </b>Introduction to Operating Systems & Networking - </li>
+                    </ul>
+                </li>
+                <li><b>Funny/Interesting Item to Remember me by: </b>George Lopez. Must I say more?</li>
+                <li><b>I'd also like to Share: </b>
+                    <ul>
+                        <li><b>Uncommon hobby: I started diving into gunsmithing and basic machining this year. Absolutely love it.</b></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+          
+          
+        <div id="Contract" class="tabcontent">
+            <h3>Contract</h3>
+            <p>
+                I, Daniel A. Cisneros Siliezar agree to abide by the terms of the course contract in my Fall 2022, ITIS 3135, Web App Design and Development with my instructor, Professor D.I. von Briesen.
+                I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private.
+                I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.
+                I also understand that given the structure and content of this class, it's possible to find many examples online or even view my classmates' code directly. 
+                I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.
+            </p>
+            <p2>Daniel A. Cisneros Siliezar 09/05/2022</p2>
+        </div>
     </main>
     <footer>
         <a href="https://validator.w3.org/check?uri=referer">
