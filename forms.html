@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="styles/default.css">
         <title>
-            Daniel Cisneros Siliezar - ITIS 3135
+            Daniel Cisneros Siliezar - ITIS 3135 Forms
         </title>
     </head>
     <body>
@@ -22,8 +22,52 @@
             </nav>
         </header>
     <main>
-        <h2>Welcome to Cisneros's ITIS 3135 Web Page</h2>
-        <p>Nothing much here, this is just the index page.</p>
+        <h2>Forms Page</h2>
+        <p>
+            At Cisneros Technologies, we strive to make the best quality products for our customers.
+            If you happen to have questions or would like to sign up for our monthly newsletter,
+            please fill out the form below!
+        </p>
+        <form action="#">
+            <label class="bold">Name: </label>
+            <input type="text" name="name" required placeholder="First and Last Name">
+            <br>
+            <label class="bold">Email: </label>
+            <input type="email" name="email" placeholder="abc123@gmail.com">
+            <br>
+            <label class="bold">Phone Number: </label>
+            <input type="tel" name="tel" size="10" required placeholder="(###)###-###">
+            <br>
+            <input type="radio" id="rademail" value="email">
+            <label for="rademail">Email</label>
+            <br>
+            <input type="radio" id="radphone" value="phone">
+            <label for="radphone">Phone</label>
+
+            <fieldset>
+                <legend class="bold">I'd prefer receiving emails of:</legend>
+                <label for="deals">Deals</label>
+                <input type="checkbox" value="deals" id="deals"> 
+                <label for="discounts">Discounts</label>
+                <input type="checkbox" value="discounts" id="discounts">
+                <label for="new-items">New Items</label>
+                <input type="checkbox" value="new-items" id="new-items">
+                <label for="nothing">Not Interested</label>
+                <input type="checkbox" value="nothing" id="nothing">
+            </fieldset>
+            <br>
+            <label class="bold">
+                <select name="sex">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="prefer unsaid">Prefer Unsaid</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <input type="submit">
+
+        </form>
     </main>
     <footer>
         <p>Other links about me below:</p>

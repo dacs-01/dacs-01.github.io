@@ -22,3 +22,25 @@ figcaption {
 footer {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+table, th, td {
+    border: 1px solid;
+  }
+
+.altcolor1 {
+    background-color: gray;
+}
+
+.altcolor2 {
+    background-color: darkgray;
+}
+.altcolor3 {
+    background-color: gray;
+
+}
+.theader, .tfooter {
+    background-color: rgb(185, 168, 8);
+}
+.bold {
+    font-weight: bold;
+}
