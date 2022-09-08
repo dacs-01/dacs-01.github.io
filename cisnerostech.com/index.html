@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                background-color: darkgray;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+        </style>
+        <title>
+            Daniel Cisneros Siliezar - ITIS 3135
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>Cisneros Technologies</h1>
+            
+        </header>
+    <main>
+        <h2>Welcome to Cis Tech!</h2>
+        <p>Nothing much here, this is just the index page.</p>
+    </main>
+    <footer>
+        <p><i>Yo quiero quality!</i> &copy; 2022</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="../images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." id = "validation_link_html"/>
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img src="../images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." id = "validation_link_css"/>
+        </a>
+        <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script> 
+    </footer>
+</body>
+</html>
