@@ -6,6 +6,9 @@ header, h2 {
 body {
     background-color: darkgray;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 figure > img{
@@ -21,6 +24,7 @@ figcaption {
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 table, th, td {
@@ -63,4 +67,10 @@ fieldset, legend {
 .inputs {
     width: 30%;
     padding: 10px 15px;
+}
+
+
+a {
+    text-decoration: none;
+    color: blue;
 }
