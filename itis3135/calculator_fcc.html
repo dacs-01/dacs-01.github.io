@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/calculator_fcc.js"></script>
         <title>
             Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
         </title>
     </head>
-    <body>
+    <body id="index">
         <header>
             <h1>Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135</h1>
             <nav>
@@ -34,56 +35,33 @@
             </nav>
         </header>
     <main>
-        <h2>Forms Page</h2>
-        <p>
-            At Cisneros Technologies, we strive to make the best quality products for our customers.
-            If you happen to have questions or would like to sign up for our monthly newsletter,
-            please fill out the form below!
-        </p>
-        <form action="#">
-            <label class="bold">Name: </label>
-            <input type="text" name="name" class="inputs" required placeholder="First and Last Name">
-            <br>
-            <label class="bold">Email: </label>
-            <input type="email" name="email" class="inputs" placeholder="abc123@gmail.com">
-            <br>
-            <label class="bold">Phone Number: </label>
-            <input type="tel" name="tel" size="10" class="inputs" required placeholder="(###)###-###">
-            <br>
-            <input type="radio" id="rademail" value="email">
-            <label for="rademail">Email</label>
-            <br>
-            <input type="radio" id="radphone" value="phone">
-            <label for="radphone">Phone</label>
-
-            <fieldset>
-                <legend class="bold">I'd prefer receiving emails of:</legend>
-                <label for="deals">Deals</label>
-                <input type="checkbox" value="deals" id="deals"> 
-                <label for="discounts">Discounts</label>
-                <input type="checkbox" value="discounts" id="discounts">
-                <label for="new-items">New Items</label>
-                <input type="checkbox" value="new-items" id="new-items">
-                <label for="nothing">Not Interested</label>
-                <input type="checkbox" value="nothing" id="nothing">
-            </fieldset>
-            <br>
-            <p>
-                Please select your Gender
-            </p>
-            <label class="bold">
-                <select name="gender">
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                    <option value="other">Other</option>
-                    <option value="prefer unsaid">Prefer Unsaid</option>
-                </select>
-            </label>
-            <br>
-            <br>
-            <input type="submit" class="button">
-
-        </form>
+        <h2>Calculator (Try) Page</h2>
+        
+            <div class="calculator">
+                <div class="calculator__display">0</div>
+        
+                <div class="calculator__keys">
+                    <button class="key--operator" data-action="add">+</button>
+                    <button class="key--operator" data-action="subtract">-</button>
+                    <button class="key--operator" data-action="multiply">&times;</button>
+                    <button class="key--operator" data-action="divide">÷</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>0</button>
+                    <button data-action="decimal">.</button>
+                    <button data-action="clear">AC</button>
+                    <button class="key--equal" data-action="calculate">=</button>
+                </div>
+            </div>
+        
+        <br> <br> <br> <br> <br> <br>
     </main>
     <footer>
         <p>Other links about me below:</p>
@@ -111,3 +89,30 @@
     </footer>
 </body>
 </html>
+
+<div class="container">
+    <div class="calculator">
+        <div class="calculator__display">0</div>
+
+        <div class="calculator__keys">
+            <button class="key--operator" data-action="add">+</button>
+            <button class="key--operator" data-action="subtract">-</button>
+            <button class="key--operator" data-action="multiply">&times;</button>
+            <button class="key--operator" data-action="divide">÷</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button data-action="decimal">.</button>
+            <button data-action="clear">AC</button>
+            <button class="key--equal" data-action="calculate">=</button>
+        </div>
+    </div>
+</div>
+<br> <br> <br> <br> <br> <br>

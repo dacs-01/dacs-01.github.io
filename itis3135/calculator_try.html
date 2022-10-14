@@ -2,11 +2,12 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles/default.css">
+        <script src="scripts/calculator_try.js"></script>
         <title>
             Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
         </title>
     </head>
-    <body>
+    <body id="index">
         <header>
             <h1>Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135</h1>
             <nav>
@@ -34,56 +35,38 @@
             </nav>
         </header>
     <main>
-        <h2>Forms Page</h2>
-        <p>
-            At Cisneros Technologies, we strive to make the best quality products for our customers.
-            If you happen to have questions or would like to sign up for our monthly newsletter,
-            please fill out the form below!
-        </p>
-        <form action="#">
-            <label class="bold">Name: </label>
-            <input type="text" name="name" class="inputs" required placeholder="First and Last Name">
-            <br>
-            <label class="bold">Email: </label>
-            <input type="email" name="email" class="inputs" placeholder="abc123@gmail.com">
-            <br>
-            <label class="bold">Phone Number: </label>
-            <input type="tel" name="tel" size="10" class="inputs" required placeholder="(###)###-###">
-            <br>
-            <input type="radio" id="rademail" value="email">
-            <label for="rademail">Email</label>
-            <br>
-            <input type="radio" id="radphone" value="phone">
-            <label for="radphone">Phone</label>
+        <h2>Calculator (Try) Page</h2>
+        <form>
+            <p>Enter digits or use the numpad below.</p>
+            <input type="text" class="numpad" value="" id="text"><br><br>
+            <div class="previous-operand" data-previous-operand></div>
+            <div class="current-operand" data-current-operand></div>
 
-            <fieldset>
-                <legend class="bold">I'd prefer receiving emails of:</legend>
-                <label for="deals">Deals</label>
-                <input type="checkbox" value="deals" id="deals"> 
-                <label for="discounts">Discounts</label>
-                <input type="checkbox" value="discounts" id="discounts">
-                <label for="new-items">New Items</label>
-                <input type="checkbox" value="new-items" id="new-items">
-                <label for="nothing">Not Interested</label>
-                <input type="checkbox" value="nothing" id="nothing">
-            </fieldset>
-            <br>
-            <p>
-                Please select your Gender
-            </p>
-            <label class="bold">
-                <select name="gender">
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                    <option value="other">Other</option>
-                    <option value="prefer unsaid">Prefer Unsaid</option>
-                </select>
-            </label>
-            <br>
-            <br>
-            <input type="submit" class="button">
+            <input type="reset" class="numpad" value="C" id="clear">
+            <input type="button" class="numpad" value="+/-" id="pos-or-neg">
+            <input type="button" class="numpad" value="%" id="percent">
+            <input type="button" class="numpad" value="/" id="divide"><br>
 
+            <input type="button" class="numpad" value="7" id="b7">
+            <input type="button" class="numpad" value="8" id="b8">
+            <input type="button" class="numpad" value="9" id="b9">
+            <input type="button" class="numpad" value="*" id="multiply"><br>
+
+            <input type="button" class="numpad" value="4" id="b4">
+            <input type="button" class="numpad" value="5" id="b5">
+            <input type="button" class="numpad" value="6" id="b6">
+            <input type="button" class="numpad" value="-" id="minus"><br>
+
+            <input type="button" class="numpad" value="1" id="b1">
+            <input type="button" class="numpad" value="2" id="b2">
+            <input type="button" class="numpad" value="3" id="b3">
+            <input type="button" class="numpad" value="+" id="add"><br>
+
+            <input type="button" class="numpad" value="0" id="b0">
+            <input type="button" class="numpad" value="." id="decimal" >
+            <input type="button" class="numpad" value="=" id="equal">
         </form>
+        <p></p>
     </main>
     <footer>
         <p>Other links about me below:</p>
