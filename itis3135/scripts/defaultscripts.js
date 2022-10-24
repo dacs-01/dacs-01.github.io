@@ -10,7 +10,7 @@ function getName() {return user_name;}
 
 function getFeeling() {return user_feeling;}
 
-function prompts() 
+function promptUser() 
 {
     setName(prompt("Please enter your name", "Name here"))
     setFeeling(prompt("How are you feeling?", "great"))

@@ -7,107 +7,60 @@
         </title>
     </head>
     <body>
-        <header>
-            <h1>Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                ||
-                <a href="contract.html">Contract</a>
-                ||
-                <a href="introduction.html">Introduction</a>
-                ||
-                <a href="tables.html">Tables</a>
-                ||
-                <a href="forms.html">Forms</a>
-                ||
-                <a href="website_evaluations.html">Web Eval</a>
-                ||
-                <a href="NOTHING/USELESS &.htm">CRAPPY Webpage</a>
-                ||
-                <a href="firstscripts.html">JavaScript Page</a>
-                ||
-                <a href="polygon.html">Polygons</a>
-                ||
-                <a href="calculator_try.html">Calculator Attempt</a>
-                ||
-                <a href="calculator_fcc.html">Calculator Refined</a>
-            </nav>
-        </header>
-    <main>
-        <h2>Forms Page</h2>
-        <p>
-            At Cisneros Technologies, we strive to make the best quality products for our customers.
-            If you happen to have questions or would like to sign up for our monthly newsletter,
-            please fill out the form below!
-        </p>
-        <form action="#">
-            <label class="bold">Name: </label>
-            <input type="text" name="name" class="inputs" required placeholder="First and Last Name">
-            <br>
-            <label class="bold">Email: </label>
-            <input type="email" name="email" class="inputs" placeholder="abc123@gmail.com">
-            <br>
-            <label class="bold">Phone Number: </label>
-            <input type="tel" name="tel" size="10" class="inputs" required placeholder="(###)###-###">
-            <br>
-            <input type="radio" id="rademail" value="email">
-            <label for="rademail">Email</label>
-            <br>
-            <input type="radio" id="radphone" value="phone">
-            <label for="radphone">Phone</label>
-
-            <fieldset>
-                <legend class="bold">I'd prefer receiving emails of:</legend>
-                <label for="deals">Deals</label>
-                <input type="checkbox" value="deals" id="deals"> 
-                <label for="discounts">Discounts</label>
-                <input type="checkbox" value="discounts" id="discounts">
-                <label for="new-items">New Items</label>
-                <input type="checkbox" value="new-items" id="new-items">
-                <label for="nothing">Not Interested</label>
-                <input type="checkbox" value="nothing" id="nothing">
-            </fieldset>
-            <br>
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Forms Page</h2>
             <p>
-                Please select your Gender
+                At Cisneros Technologies, we strive to make the best quality products for our customers.
+                If you happen to have questions or would like to sign up for our monthly newsletter,
+                please fill out the form below!
             </p>
-            <label class="bold">
-                <select name="gender">
-                    <option value="female">Female</option>
-                    <option value="male">Male</option>
-                    <option value="other">Other</option>
-                    <option value="prefer unsaid">Prefer Unsaid</option>
-                </select>
-            </label>
-            <br>
-            <br>
-            <input type="submit" class="button">
+            <form action="#">
+                <label class="bold">Name: </label>
+                <input type="text" name="name" class="inputs" required placeholder="First and Last Name">
+                <br>
+                <label class="bold">Email: </label>
+                <input type="email" name="email" class="inputs" placeholder="abc123@gmail.com">
+                <br>
+                <label class="bold">Phone Number: </label>
+                <input type="tel" name="tel" size="10" class="inputs" required placeholder="(###)###-###">
+                <br>
+                <input type="radio" id="rademail" value="email">
+                <label for="rademail">Email</label>
+                <br>
+                <input type="radio" id="radphone" value="phone">
+                <label for="radphone">Phone</label>
 
-        </form>
-    </main>
-    <footer>
-        <p>Other links about me below:</p>
-        <nav>
-            <a href="https://webpages.charlotte.edu/dcisner1/">My Charlotte webpage</a>
-            ||
-            <a href="https://github.com/dacs-01/dacs-01.github.io">My GitHub Repo</a>
-            ||
-            <a href="https://dacs-01.github.io/">My GitHub Page</a>
-            ||
-            <a href="https://www.freecodecamp.org/daniel_cisneros_siliezar">My freecodecamp Account</a>
-            ||  
-            <a href="https://www.codecademy.com/profiles/danielCisnerosSiliezar">My codecademy Account</a>
-            ||
-            <a href="https://www.linkedin.com/in/daniel-cisneros-siliezar-a742351b8/">My LinkedIn Account</a>
-        </nav>
-        <p>Designed by <a href="cisnerostech.com">Cisneros Technologies</a> &copy; 2022</p>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." id = "validation_link_html"/>
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." id = "validation_link_css"/>
-        </a>
-        <script src="scripts/default.js"></script> 
-    </footer>
+                <fieldset>
+                    <legend class="bold">I'd prefer receiving emails of:</legend>
+                    <label for="deals">Deals</label>
+                    <input type="checkbox" value="deals" id="deals"> 
+                    <label for="discounts">Discounts</label>
+                    <input type="checkbox" value="discounts" id="discounts">
+                    <label for="new-items">New Items</label>
+                    <input type="checkbox" value="new-items" id="new-items">
+                    <label for="nothing">Not Interested</label>
+                    <input type="checkbox" value="nothing" id="nothing">
+                </fieldset>
+                <br>
+                <p>
+                    Please select your Gender
+                </p>
+                <label class="bold">
+                    <select name="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                        <option value="prefer unsaid">Prefer Unsaid</option>
+                    </select>
+                </label>
+                <br>
+                <br>
+                <input type="submit" class="button">
+
+            </form>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>

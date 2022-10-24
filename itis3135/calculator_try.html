@@ -8,89 +8,42 @@
         </title>
     </head>
     <body id="index">
-        <header>
-            <h1>Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                ||
-                <a href="contract.html">Contract</a>
-                ||
-                <a href="introduction.html">Introduction</a>
-                ||
-                <a href="tables.html">Tables</a>
-                ||
-                <a href="forms.html">Forms</a>
-                ||
-                <a href="website_evaluations.html">Web Eval</a>
-                ||
-                <a href="NOTHING/USELESS &.htm">CRAPPY Webpage</a>
-                ||
-                <a href="firstscripts.html">JavaScript Page</a>
-                ||
-                <a href="polygon.html">Polygons</a>
-                ||
-                <a href="calculator_try.html">Calculator Attempt</a>
-                ||
-                <a href="calculator_fcc.html">Calculator Refined</a>
-            </nav>
-        </header>
-    <main>
-        <h2>Calculator (Try) Page</h2>
-        <form>
-            <p>Enter digits or use the numpad below.</p>
-            <input type="text" class="numpad" value="" id="text"><br><br>
-            <div class="previous-operand" data-previous-operand></div>
-            <div class="current-operand" data-current-operand></div>
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Calculator (Try) Page</h2>
+            <form>
+                <p>Enter digits or use the numpad below.</p>
+                <input type="text" class="numpad" value="" id="text"><br><br>
+                <div class="previous-operand" data-previous-operand></div>
+                <div class="current-operand" data-current-operand></div>
 
-            <input type="reset" class="numpad" value="C" id="clear">
-            <input type="button" class="numpad" value="+/-" id="pos-or-neg">
-            <input type="button" class="numpad" value="%" id="percent">
-            <input type="button" class="numpad" value="/" id="divide"><br>
+                <input type="reset" class="numpad" value="C" id="clear">
+                <input type="button" class="numpad" value="+/-" id="pos-or-neg">
+                <input type="button" class="numpad" value="%" id="percent">
+                <input type="button" class="numpad" value="/" id="divide"><br>
 
-            <input type="button" class="numpad" value="7" id="b7">
-            <input type="button" class="numpad" value="8" id="b8">
-            <input type="button" class="numpad" value="9" id="b9">
-            <input type="button" class="numpad" value="*" id="multiply"><br>
+                <input type="button" class="numpad" value="7" id="b7">
+                <input type="button" class="numpad" value="8" id="b8">
+                <input type="button" class="numpad" value="9" id="b9">
+                <input type="button" class="numpad" value="*" id="multiply"><br>
 
-            <input type="button" class="numpad" value="4" id="b4">
-            <input type="button" class="numpad" value="5" id="b5">
-            <input type="button" class="numpad" value="6" id="b6">
-            <input type="button" class="numpad" value="-" id="minus"><br>
+                <input type="button" class="numpad" value="4" id="b4">
+                <input type="button" class="numpad" value="5" id="b5">
+                <input type="button" class="numpad" value="6" id="b6">
+                <input type="button" class="numpad" value="-" id="minus"><br>
 
-            <input type="button" class="numpad" value="1" id="b1">
-            <input type="button" class="numpad" value="2" id="b2">
-            <input type="button" class="numpad" value="3" id="b3">
-            <input type="button" class="numpad" value="+" id="add"><br>
+                <input type="button" class="numpad" value="1" id="b1">
+                <input type="button" class="numpad" value="2" id="b2">
+                <input type="button" class="numpad" value="3" id="b3">
+                <input type="button" class="numpad" value="+" id="add"><br>
 
-            <input type="button" class="numpad" value="0" id="b0">
-            <input type="button" class="numpad" value="." id="decimal" >
-            <input type="button" class="numpad" value="=" id="equal">
-        </form>
-        <p></p>
-    </main>
-    <footer>
-        <p>Other links about me below:</p>
-        <nav>
-            <a href="https://webpages.charlotte.edu/dcisner1/">My Charlotte webpage</a>
-            ||
-            <a href="https://github.com/dacs-01/dacs-01.github.io">My GitHub Repo</a>
-            ||
-            <a href="https://dacs-01.github.io/">My GitHub Page</a>
-            ||
-            <a href="https://www.freecodecamp.org/daniel_cisneros_siliezar">My freecodecamp Account</a>
-            ||  
-            <a href="https://www.codecademy.com/profiles/danielCisnerosSiliezar">My codecademy Account</a>
-            ||
-            <a href="https://www.linkedin.com/in/daniel-cisneros-siliezar-a742351b8/">My LinkedIn Account</a>
-        </nav>
-        <p>Designed by <a href="cisnerostech.com">Cisneros Technologies</a> &copy; 2022</p>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." id = "validation_link_html"/>
-        </a>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-            <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." id = "validation_link_css"/>
-        </a>
-        <script src="scripts/default.js"></script> 
-    </footer>
+                <input type="button" class="numpad" value="0" id="b0">
+                <input type="button" class="numpad" value="." id="decimal" >
+                <input type="button" class="numpad" value="=" id="equal">
+            </form>
+            <p></p>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>

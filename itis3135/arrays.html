@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/default.css">
+        <title>
+            Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
+        </title>
+    </head>
+    <body id="index">
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Arrays Page</h2>
+            <label for="people">People:</label>
+            <select id="people" name="people">
+                <option value="Daniel">Daniel</option>
+                <option value="Phil">Phil</option>
+                <option value="Glenia">Glenia</option>
+            </select>
+            <br>
+
+            <label for="salary">Salary (must be above $30,000):</label>
+            <input type="number" id="salary" required=""><br>
+
+            <label></label>
+            <input type="button" id="add_salary" value="Add Salary">
+            <input type="button" id="display_results" value="Show Results">
+            <input type="button" id="display_salary" value="Display Salary"><br>
+
+            <div id="results"></div>
+
+            <table id="results_table"></table>
+            <p></p>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
