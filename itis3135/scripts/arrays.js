@@ -15,8 +15,8 @@ function addSalary()
     var person = $("people").value;
     var salary = $("salary").value;
     
-   if (salary < 30000 || salary == "" || isNaN(salary)
-   ){
+   if (salary < 30000 || salary == "" || isNaN(salary))
+   {
        alert("You must enter a valid salary");
        salary = "";
        $("people").focus();
@@ -46,7 +46,7 @@ function displayResults()
     {
         sum += salaries[i];
     }
-    avg = (sum/salaries.length).toFixed(2);
+    avg = (sum / salaries.length).toFixed(2);
 
     for(j = 0; j < salaries.length; j++)
     {
@@ -56,8 +56,8 @@ function displayResults()
         }
     }
 
-    $("results").innerHTML = "<h2>Results</h2>" + "<p>Average of the given salaries is $" + avg
-        + "</p>" + "<p>The highest salary of the company is earned by " + people[highestSal] + " with a salary of $" + max + "</p>" ;
+    $("results").innerHTML = "<h2>Results</h2>" + "<p>Average of the employees' salaries is $" + avg
+        + ".</p>" + "<p>The highest salary of all of the employees is $" + max + ", which is earned by " + people[highestSal] + ".</p>" ;
 }
 
 function displaySalary()

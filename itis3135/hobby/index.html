@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/default.css">
+        <title>
+            Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
+        </title>
+        <style>
+            header, footer, h2 {
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black;
+            }
+            header nav, footer nav {
+                background-color: #333;
+                overflow: hidden;
+            }
+            header nav a, footer nav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            header nav a:hover, footer nav a:hover {
+                background-color: #ddd;
+                color: black;
+            }  
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            figcaption {
+                text-align: center;
+                font-style: italic;
+            }          
+            /* Style the tab */
+            .tab {
+            overflow: hidden;
+            border: 1px solid rgb(43, 42, 42);
+            background-color: rgb(43, 42, 42);
+            
+            }
+
+            /* Style the buttons that are used to open the tab content */
+            .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            color: white;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+            background-color: #ccc;
+            color: black;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid rgb(43, 42, 42);
+            border-top: none;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: rgb(107, 34, 34);
+                color: white;
+            }
+            h1 {
+                color: black;
+            }
+            a {
+                color: white;
+                font-weight: bold;
+            }
+            
+        </style>
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+
+    </head>
+    <body>
+        <header>
+            <h1>Daniel Cisneros Siliezar's Favorite Hobby</h1>
+            <nav class="tab">
+                <button class="tablinks" onclick="openTab(event, 'what')" id="defaultOpen">What</button>
+                <button class="tablinks" onclick="openTab(event, 'who')">Who</button>
+                <button class="tablinks" onclick="openTab(event, 'when')">When</button>
+                <button class="tablinks" onclick="openTab(event, 'where')">Where</button>
+                <button class="tablinks" onclick="openTab(event, 'how')">How</button>
+                <button class="tablinks" onclick="openTab(event, 'why')">Why</button>
+            </nav>
+        </header>
+        <main>
+            <section id="who" class="tabcontent">
+                <h2>About Me</h2>
+                <figure>
+                    <img src="images/first_projects.jpg" alt="First project firearms" class="center">
+                    <figcaption>
+                        My first two rifles (I knew nothing about firearms back in the day)
+                    </figcaption>
+                </figure>
+                <p>I first got into firearms after I came home from initial training with the Marines. 
+                    <strong>Before I say anything else, I will make this clear: being in the military
+                    does not qualify you as a firearms expert.</strong> I had a friend that had a father 
+                    who built AR-15s as a hobby, so that's how I began the wonderful experience of periodically
+                    burning through my wallet.
+                </p>
+                <p>As time went on, I began to learn more about the companies that manufacture the parts,
+                    as well as researching on what calibers to use for different firearms and what purpose
+                    each firearm would serve you personally based on its features. A great place that I used to find more information
+                    about manufacturer reputations and product reliability is, surprisingly, Reddit. There are other forums
+                    that do a great job, too (AR15.com), but I mainly got all of my knowledge through Reddit. Reddit is also
+                    a surprisingly great place to purchase new or used parts and accessories for really great prices.
+                </p>
+            </section>
+            <section id="what" class="tabcontent">
+                <h2>Home</h2>
+                <img src="images/shooting.JPG" alt="My biggest hobby, firearms" class="center">
+                <figcaption>
+                    Shooting an old Mauser Gewehr 98 rifle.
+                </figcaption>
+                <p>
+                    Some of my favorite hobbies to partake in would be firearm construction and target shooting. 
+                    They go hand in hand with each other and I've actually learned a bit of machining to go along with firearm construction.
+                    I strongly encourage anyone who is interested in firearms to learn more about them and get hands on experience with them.
+                    It is imperative to always maintain safety, as it is number one priority when messing with these tools.
+                </p>
+                <br>
+                <p>
+                    I want to educate and explain the usage of firearms, as well as how to handle them safely.
+                    It is encouraged to enjoy this hobby to the fullest, but I do not want to see or hear of anyone injuring
+                    themselves or other people due to negligence on their behalf. I will NOT go into detail on how to manufacture
+                    or sell firearms.
+                </p>
+            </section>
+            <section id="when" class="tabcontent">
+                <h2>Best Time to Get Into Firearms</h2>
+                <figure>
+                    <img src="images/third_build.jpg" class="center" alt="Another build">
+                    <figcaption>
+                        The best times of the week are when I hit the range.
+                    </figcaption>
+                </figure>
+                <p>Honestly, there is no best time to get into firearms. I just happened to get into them amidst a pandemic,
+                    where it was discouraged to go out and socialize like normal. I also made some money from the volatile stock
+                    market at the time, which helped fund my projects and even paying my university fees. During the pandemic,
+                    gun and ammo prices were through the roof; I wish I got into them prior the pandemic, but the past cannot be changed.
+                </p>
+                <p>If I go shoot, it is typically whenever I am free and have a decent amount of ammunition. I have not been able to shoot
+                    since I started this fall semester, as I have been too busy knocking out long assignments and getting involved with the
+                    university more. The military isn't too kind with my time either, as weekends that would otherwise be free are take up by 
+                    my unit. Shooting involves a lot of free time to perfect and also requires a lot of money to be spent.
+                </p>
+            </section>
+            <section id="where" class="tabcontent">
+                <h2>Where I Go To Shoot</h2>
+                <figure>
+                    <img src="images/learning_more.jpg" class="center">
+                    <figcaption>
+                        Test firing a newer build later in the year
+                    </figcaption>
+                </figure>
+                <p>
+                    I typically prefer shooting on private land owned by a friend. I despise going to indoor ranges,
+                    as those ranges only go up to 25 yards, as well as encountering potentially dangerous people 
+                    that would cause safety violations near me. If you own a handgun, indoor ranges are best, but not
+                    with carbines or long guns. It is best to train and explore this hobby in a place that's
+                    open and secluded from everyone else. If you go to a public range, go to one that is outdoors and in the country,
+                    but your best choice is to go on open land owned by a trusted friend or the Federal government.
+                </p>
+                <p>Here are some resources on where to go shooting at (Also great personal recommendations):</p>
+                <ul>
+                    <li><a href="https://foothillspublicshooting.cc/">Foothills Complex</a></li>
+                    <li><a href="https://www.blm.gov/">Bureau of Land Management</a></li>
+                    <li><a href="https://www.eaglegunsandrange.com/">Eagle Range</a></li>
+                </ul>
+            </section>
+            <section id="how" class="tabcontent">
+                <h2>How to Safely Handle and Shoot Firearms</h2>
+                <figure>
+                    <img src="images/safety_rules.jpg" class="center" alt="Safety rules">
+                    <figcaption>
+                        
+                    </figcaption>
+                    <p>How do you safely handle a firearm? There are four main safety rules when handling firearms:</p>
+                    <ol>
+                        <li>Treat every firearm as it were loaded</li>
+                        <li>Never point a firearm at anything you don't want to shoot at</li>
+                        <li>Keep your firearm on safe until you're ready to fire</li>
+                        <li>Keep your finger off the trigger until you're ready to fire</li>
+                    </ol>
+                    <p>By constantly enacting these practices, you are guaranteed to have a good time with yourself
+                        and everyone around you. Firearms are <strong>NOT</strong> toys and should never be played around with.
+                    </p>
+                    <p>To fire any weapon, you must follow these steps:
+                    </p>
+                    <ol>
+                        <li>Keep finger off the trigger when picking up the weapon and point in safe direction</li>
+                        <li>Load a full magazine.</li>
+                        <li>Pull charging handle or slide back to chamber in a live round, then put weapon on safe (if able to).</li>
+                        <li>Aim at your intended target with your sights or optics.</li>
+                        <li>Put weapon on fire and pull the trigger with a slow steady squeeze.</li>
+                        <li>Repeat until you want to stop or weapon is out of ammo. When finished, put weapon on safe.</li>
+                    </ol>
+                    <p>If you ever desire to modify your weapons, feel free to attach whatever is necessary to accomplish your goals.
+                        Feel free to spray paint them, but if you decide to attach other things to your weapons, do not buy modifications 
+                        from Amazon. Do not cheap out on parts or accessories. Buy name brand products that are proven to be reliable and 
+                        fit within your budget at the same time. Buy quality scopes and mounts that will be able to hold zero through hundreds
+                        of rounds fired.s
+                    </p>
+                </figure>
+            </section>
+            <section id="why" class="tabcontent">
+                <h2>Why is it Important</h2>
+                <figure>
+                    <img src="images/most_recent_build.JPG" alt="Dog with blaster" class="center">
+                    <figcaption>
+                        My GSD with a rifle that matches his coat color
+                    </figcaption>
+                </figure>
+                <p>The ability to own firearms is guaranteed by the Second Amendment of the US Constitution. The reason behind that is 
+                    not because of defending yourself against criminals or to use for hunting, rather the Second Amendment exists to defend
+                    yourself against tyranny if it ever comes to that situation. There are many confusing laws and regulations passed by both 
+                    state and federal governments, so it's best to live in a state that has fewer restrictions and to acquire fully legal firearms.
+                    Knowing safety rules on top of knowing regulations is the best way to keep yourself out of unwanted trouble. 
+                </p>
+                <p>If you have any questions about the laws or regulations, feel free to ask me below:</p>
+                <form action="#" id="gunform">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email">
+                    <br>
+                    <textarea form="gunform" rows="10" cols="50" placeholder="Enter your questions here..."></textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+                
+            </section>
+
+            
+        </main>
+        <script>
+                function openTab(evt, tabName) {
+                    // Declare all variables
+                    var i, tabcontent, tablinks;
+    
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+    
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+    
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    }
+
+                    document.getElementById("defaultOpen").click();
+
+            </script>
+        <footer>
+            <a href="../">Return to home page of Distinguished Cheetah - ITIS 3135</a>
+            <p>Designed by <a href="cisnerostech.com">Cisneros Technologies</a> &copy; 2022</p>
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="../images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." id = "validation_link_html"/>
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="../images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." id = "validation_link_css"/>
+            </a>
+            <script src="../scripts/default.js"></script>
+        </footer>
+</body>
+</html>

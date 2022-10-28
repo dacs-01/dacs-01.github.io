@@ -179,3 +179,7 @@ a {
     background-color: #ddd;
     color: black;
   }
+
+  nav a:active {
+    background-color:red;
+  }
