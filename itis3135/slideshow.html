@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/default.css">
+        <title>
+            Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <style>
+            #slides {
+                position:relative;
+            }
+            #slides figure.slide {
+                position:absolute;
+                top:0;left:0;
+                display:none;
+            }
+        </style>
+    </head>
+    <body id="index">
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Slideshow</h2>
+            <div class="slides">
+                <figure class="slide">
+                    <img src="images/myself.png" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="images/charlotte.png" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                
+            </div>
+            <!--https://www.itgeared.com/create-simple-slideshow-jquery-fading/--> 
+            
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+        <script>
+            let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = $("#slides");
+  //let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  /*
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  */
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+}
+        </script>
+</body>
+</html>

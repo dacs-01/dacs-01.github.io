@@ -89,14 +89,6 @@ a {
     padding:6px 24px;
     width: 65px;
 }
-
-.calculator__display {
-	background-color: grey;
-	color: #fff;
-	font-size: 5em;
-	padding: 0.5em 0.75em;
-	text-align: right;
-  }
   
 #text {
     width: 225px;
@@ -117,7 +109,7 @@ a {
   }
   
   .calculator__display {
-	background-color: grey;
+	background-color: rgb(39, 39, 39);
 	color: #fff;
 	font-size: 5em;
 	padding: 0.5em 0.75em;
@@ -133,7 +125,7 @@ a {
   
   .calculator__keys > * {
 	font-size: 2em;
-	background-color: #fff;
+	background-color: rgb(185, 74, 0);
 	padding: 0.5em 1.25em;
 	position: relative;
 	text-align: center;
@@ -158,7 +150,7 @@ a {
   }
   
   .key--equal {
-	background-image: linear-gradient(to bottom, pink, pink);
+	background-image: linear-gradient(to bottom, #999, #999);
 	grid-column: -2;
 	grid-row: 2 / span 4;
   }
