@@ -7,84 +7,58 @@
         </title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-        <style>
-            #slides {
-                position:relative;
-            }
-            #slides figure.slide {
-                position:absolute;
-                top:0;left:0;
-                display:none;
-            }
-        </style>
+        
     </head>
     <body id="index">
         <div data-include="components/header.html"></div>
         <main>
             <h2>Slideshow</h2>
-            <div class="slides">
-                <figure class="slide">
-                    <img src="images/myself.png" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="images/charlotte.png" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure class="slide">
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
+            <div id="slideshow">
+                <div class="slide_img fade">
+                    <figure><img src="images/cheetah.jpg"></figure>
+                    <figcaption>A glorious picture of our mascot!</figcaption>
+                </div>
                 
+                <div class="slide_img fade">
+                    <figure><img src="hobby/images/most_recent_build.JPG"></figure>
+                    <figcaption>My most recent personal project.</figcaption>
+                </div>
+                
+                <div class="slide_img fade">
+                    <figure><img src="images/cheetah_cub.png"></figure>
+                    <figcaption>Another glorious picture of our mascot (as a baby)!</figcaption>
+                </div>
+
+                <div class="slide_img fade">
+                    <figure><img src="hobby/images/shooting.JPG"></figure>
+                    <figcaption>I enjoy target shooting!</figcaption>
+                </div>
+
+                <div class="slide_img fade">
+                    <figure><img src="hobby/images/learning_more.jpg"></figure>
+                    <figcaption>A project I worked on during the pandemic.</figcaption>
+                </div>
+
+                <div class="slide_img fade">
+                    <figure><img src="images/myself.png"></figure>
+                    <figcaption>Chillin' by the woods.</figcaption>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <!--https://www.itgeared.com/create-simple-slideshow-jquery-fading/--> 
-            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/HTMLInclude.js"></script>
-        <script>
-            let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = $("#slides");
-  //let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  /*
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  */
-  slides[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += " active";
-}
-        </script>
+        <script src="scripts/slideshow.js"></script>
 </body>
 </html>

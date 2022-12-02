@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/activity10.css">
+        <title>
+            Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
+        </title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        
+    </head>
+    <body id="index">
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Image Swap</h2>
+            <ul id="image_list">
+                <div class="inline">
+                <li><a href="activity10_images/cheetah.jpg" title="Cheetah">
+                    <img src="activity10_thumbnails/cheetah.jpg" alt="" class="swap">
+                </a></li>
+                <li><a href="activity10_images/cheetah_cub.png" title="Cheetah cub">
+                    <img src="activity10_thumbnails/cheetah_cub.png" alt="" class="swap">
+                </a></li></div>
+            </ul>
+            <!--https://www.itgeared.com/create-simple-slideshow-jquery-fading/--> 
+            <p><img src="activity10_images/cheetah.jpg" alt="" id="image"></p>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+        <script src="scripts/activity10.js"></script>
+</body>
+</html>

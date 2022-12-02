@@ -176,78 +176,39 @@ a {
     background-color:red;
   }
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  #slideshow {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  margin-right: 16%;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+#slideshow img {
+  position: absolute; 
+}
+.swap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #555;
+}
+li {
+    display: inline;
+    padding: 4px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+.inline {
+    display:flex;
+    justify-content:center;
+    }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.slide_img > figcaption {
-  padding-bottom: 15px;
-}
-
-.slide_img > figure > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  border: 3px solid #555;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: rgb(104, 103, 103);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #920f0f;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid #555;
 }

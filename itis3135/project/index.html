@@ -6,7 +6,7 @@
             Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
         </title>
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
-
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     </head>
     <body>
         <header>
@@ -41,15 +41,53 @@
             </section>
             <section id="gallery" class="tabcontent">
                 <h2>My Artwork</h2>
-                <p>
-                    Quisque tempus elit sit amet erat tristique, lobortis gravida magna efficitur. Praesent elementum nunc sit amet ipsum viverra, at gravida sapien scelerisque. 
-                    Nam pharetra aliquam metus tempor iaculis. Suspendisse gravida felis ac mauris placerat, vitae placerat lacus fringilla. Fusce sed erat iaculis, mattis elit ut, iaculis ligula.
-                    Quisque vulputate egestas ipsum vel dictum. Proin dictum dolor eget dictum lobortis. Integer ultrices convallis nulla, in volutpat massa sollicitudin nec. 
-                    Morbi euismod lorem neque, at consectetur sapien luctus a. Aenean a nisl sed odio volutpat aliquam vitae et leo.
-                </p>
+                <div id="slideshow">
+                    <div class="slide_img fade">
+                        <figure><img src="images/pic1.JPG"></figure>
+                        <figcaption>A vibrant flower doodle</figcaption>
+                    </div>
+                    
+                    <div class="slide_img fade">
+                        <figure><img src="images/pic2.JPG"></figure>
+                        <figcaption></figcaption>
+                    </div>
+                    
+                    <div class="slide_img fade">
+                        <figure><img src="images/pic3.JPEG"></figure>
+                        <figcaption></figcaption>
+                    </div>
+    
+                    <div class="slide_img fade">
+                        <figure><img src="images/pic4.JPG"></figure>
+                        <figcaption></figcaption>
+                    </div>
+    
+                    <div class="slide_img fade">
+                        <figure><img src="images/pic5.JPEG"></figure>
+                        <figcaption></figcaption>
+                    </div>
+    
+                    <div class="slide_img fade">
+                        <figure><img src="images/pic6.JPEG"></figure>
+                        <figcaption></figcaption>
+                    </div>
+    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
             </section>
             <section id="commissions" class="tabcontent">
                 <h2>Interested in an Art Piece?</h2>
+                <figure></figure>
                 <p>
                     Sed dapibus massa nec mi maximus dapibus. Phasellus quis massa vel dolor fringilla ullamcorper ac at augue. In sit amet libero dolor. 
                     Nulla dignissim leo ac nisl molestie luctus sit amet cursus urna. Sed orci lectus, feugiat a augue eu, fermentum vestibulum tellus. 
@@ -59,19 +97,36 @@
             </section>
             <section id="contact" class="tabcontent">
                 <h2>Have Questions?</h2>
-                <p>
-                    Pellentesque rhoncus pellentesque felis, vitae eleifend elit porta a. Integer blandit ut neque aliquam molestie. Aliquam fermentum nibh vitae euismod sollicitudin. 
-                    Maecenas vel erat posuere, ultrices erat quis, feugiat risus. Ut ut ipsum interdum lacus congue sollicitudin nec at nunc. In rhoncus ipsum pharetra erat malesuada lobortis. 
-                    Vivamus est velit, tincidunt non sapien at, ullamcorper aliquet justo. Vivamus suscipit interdum lacus, sit amet mollis massa porta id. 
-                    Curabitur eros turpis, mollis et sollicitudin eu, aliquet ut dui. Quisque ut enim vel quam dapibus elementum vel eget dolor. Maecenas quis eros eu felis pulvinar finibus eu at ligula. 
-                    Phasellus semper lorem vel risus viverra, sed malesuada neque imperdiet. Aenean ac quam quis nunc tempor pellentesque.
-                </p>
+                <form action="#">
+                    <label class="bold">Name: </label>
+                    <input type="text" name="name" class="inputs" required placeholder="First and Last Name">
+                    <br>
+                    <label class="bold">Email: </label>
+                    <input type="email" name="email" class="inputs" placeholder="abc123@gmail.com">
+                    <br>
+                    <label class="bold">Phone Number: </label>
+                    <input type="tel" name="tel" size="10" class="inputs" required placeholder="(###)###-###">
+                    <br>
+                    <p>Any additional comments or suggestions?</p>
+                    <textarea
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Enter your comment here...">
+                    </textarea>
+                    
+                    <br>
+                    <br>
+                    <input type="submit" class="button">
+    
+                </form>
             </section>
             
 
             
         </main>
         <script src="scripts/client_scripts.js"></script>
+        <script src="scripts/project_slideshow.js"></script>
         <footer>
             <a href="../">Return to home page of Distinguished Cheetah - ITIS 3135</a>
             <p>Designed by <a href="cisnerostech.com">Cisneros Technologies</a> &copy; 2022</p>
