@@ -2,11 +2,14 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles/default.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>
             Daniel Cisneros Siliezar's Distinguished Cheetah - ITIS 3135
         </title>
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     </head>
     <body>
         <header>
@@ -15,7 +18,7 @@
                 <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">Home</button>
                 <button class="tablinks" onclick="openTab(event, 'about')">About</button>
                 <button class="tablinks" onclick="openTab(event, 'gallery')">Gallery</button>
-                <button class="tablinks" onclick="openTab(event, 'commissions')">Commissions</button>
+                <button class="tablinks" onclick="openTab(event, 'reviews')">Reviews</button>
                 <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
             </nav>
         </header>
@@ -23,20 +26,38 @@
             <section id="home" class="tabcontent">
                 <h2>Welcome!</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget nisl est. Ut a tortor in nibh malesuada porta. 
-                    Integer efficitur pretium iaculis. Ut interdum pulvinar tellus quis molestie. Maecenas vel eros at augue bibendum blandit. Praesent sed sollicitudin ligula. 
-                    Cras et purus ornare, commodo tortor ullamcorper, sagittis nisl. Quisque eu libero a enim volutpat facilisis. Praesent rutrum ex ut erat luctus auctor. 
-                    Sed interdum sem ex, in accumsan libero accumsan nec. Duis ullamcorper lorem metus. Nam vitae auctor elit.
+                    Welcome to my Art Emporium! I sell and take commissions to anyone that wants to acquire an art piece from me.
+                    Drawing art is a huge passion of mine and I want to extend my passion for others to see for themselves.
+                    I typically draw art during my free time and/or whenever I have to relieve any sort of stress that I am feeling.
                 </p>
             </section>
             <section id="about" class="tabcontent">
                 <h2>About Me</h2>
-                <p>
-                    Mauris dapibus ligula sapien, et rutrum velit elementum a. Fusce tortor neque, facilisis vel mi a, venenatis suscipit leo. 
-                    Sed varius consequat nulla, at aliquet ligula iaculis a. Morbi efficitur ligula non mauris dignissim, non sodales sem dignissim. 
-                    Donec quis mollis erat. Ut non ullamcorper risus. Maecenas varius erat aliquam, consequat quam in, sodales elit. Nam at eleifend risus. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Vivamus varius pharetra feugiat. Pellentesque fermentum convallis rhoncus. Nunc et nisi ac dui laoreet porta sed vitae nisl.
+                <ul id="image_list">
+                    <div class="inline">
+                    <li><a href="images/Kayla1.jpeg" title="selfie of Kayla">
+                        <img src="images/thumbnails/Kayla1.jpeg" alt="thumbnail 1" class="swap">
+                    </a></li>
+                    <li><a href="images/Kayla2.jpeg" title="formal picture of Kayla">
+                        <img src="images/thumbnails/Kayla2.jpeg" alt="thumbnail 2" class="swap">
+                    </a></li></div>
+                </ul>
+                 
+                <p><img src="images/Kayla1.jpeg" alt="main picture" id="image"></p>
+
+                <br>
+                <p id="bio">
+                    Hello! My name is Kayla DiBruno and I am currently a freshman at Western Carolina University.
+                    I am studying to become a social worker, as I have been in and out of foster
+                    care growing up. I am 19 years old and I have found that drawing has made a
+                    lifetime impact on my mental health. It has greatly increased my creativity,
+                    as well as help pass the time or calm me down whenever I am stressed. 
+                    <br><br>
+                    I chose to be in social work because I want to make a positive impact onto the
+                    children within my care. They have experienced traumatic events with their lives
+                    at home like I have, so I want to help them see how they can cope with those experiences.
+                    Many children that end up in foster care typically end up making terrible life choices;
+                    I want to prevent that as much as possible.
                 </p>
             </section>
             <section id="gallery" class="tabcontent">
@@ -53,12 +74,12 @@
                     </div>
                     
                     <div class="slide_img fade">
-                        <figure><img src="images/pic3.JPEG"></figure>
+                        <figure><img src="images/pic3.JPG"></figure>
                         <figcaption></figcaption>
                     </div>
     
                     <div class="slide_img fade">
-                        <figure><img src="images/pic4.JPG"></figure>
+                        <figure><img src="images/pic4.JPEG"></figure>
                         <figcaption></figcaption>
                     </div>
     
@@ -67,10 +88,6 @@
                         <figcaption></figcaption>
                     </div>
     
-                    <div class="slide_img fade">
-                        <figure><img src="images/pic6.JPEG"></figure>
-                        <figcaption></figcaption>
-                    </div>
     
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -81,22 +98,73 @@
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
                         <span class="dot" onclick="currentSlide(5)"></span>
-                        <span class="dot" onclick="currentSlide(6)"></span>
                     </div>
                 </div>
             </section>
-            <section id="commissions" class="tabcontent">
-                <h2>Interested in an Art Piece?</h2>
-                <figure></figure>
-                <p>
-                    Sed dapibus massa nec mi maximus dapibus. Phasellus quis massa vel dolor fringilla ullamcorper ac at augue. In sit amet libero dolor. 
-                    Nulla dignissim leo ac nisl molestie luctus sit amet cursus urna. Sed orci lectus, feugiat a augue eu, fermentum vestibulum tellus. 
-                    Integer sodales, tortor eget volutpat tempor, felis velit luctus mauris, eget tempor nibh ex in diam. Vivamus tempus nibh est, eu condimentum elit tristique sed. 
-                    Mauris bibendum molestie tempor. Sed quis libero bibendum arcu elementum euismod.
+            <section id="reviews" class="tabcontent">
+                <h2>Reviews</h2>
+                <p class="reviews">
+                    Joe Schmoe - 11/21/2022 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                 </p>
+                <p>Kayla has amazing skills! 10/10 would buy again!</p>
+                <br>
+                <p class="reviews">
+                    Daniel Cisneros - 10/13/2022
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </p>
+                <p>She got back to me within a timely manner and I highly recommend buying from her.
+                    She's very skilled and I even hung her art in my room!
+                </p>
+                <br>
+                <p class="reviews">
+                    Jane Doe - 10/1/2022
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </p>
+                <p>Kayla can draw really well, but I wished she was more responsive with her emails.</p>
+                <br>
+                <h2>Questions</h2>
+                <p>Q: What is the expected time to complete a drawing?</p>
+                <p>A: 1-2 weeks depending on its complexity</p>
+                <br>
+                <p>Q: Why did you choose WCU over other universities?</p>
+                <p>A: I love the mountains and the cost to attend was fully covered by the state.
+                    They also offered the major that I wanted to go in!
+                </p>
+                <br>
+                <p>Q: Do you prefer to draw with your hands or use a computer?</p>
+                <p>A: I would much prefer to hand draw my projects over anything else.</p>
+                <br>
+
+                <div id="ex1" class="modal">
+                    <p>Thanks for clicking. That felt good.</p>
+                    <a href="#" rel="modal:close">Close</a>
+                  </div>
+                  
+                  <!-- Link to open the modal -->
+                  <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+                <figure></figure>
+
             </section>
             <section id="contact" class="tabcontent">
                 <h2>Have Questions?</h2>
+                <p>
+                    Please let me know what you want to have drawn by submitting a contact form.
+                    I will receive your information in my email and we will continue from there!
+                    My prices may vary, but my baseline is $10 per photo that will be made downloadable.
+                </p>
                 <form action="#">
                     <label class="bold">Name: </label>
                     <input type="text" name="name" class="inputs" required placeholder="First and Last Name">
@@ -110,7 +178,6 @@
                     <p>Any additional comments or suggestions?</p>
                     <textarea
                       id="comments"
-                      class="input-textarea"
                       name="comment"
                       placeholder="Enter your comment here...">
                     </textarea>
@@ -126,16 +193,11 @@
             
         </main>
         <script src="scripts/client_scripts.js"></script>
-        <script src="scripts/project_slideshow.js"></script>
         <footer>
             <a href="../">Return to home page of Distinguished Cheetah - ITIS 3135</a>
             <p>Designed by <a href="cisnerostech.com">Cisneros Technologies</a> &copy; 2022</p>
-            <a href="https://validator.w3.org/check?uri=referer">
-                <img src="../images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." id = "validation_link_html"/>
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img src="../images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." id = "validation_link_css"/>
-            </a>
+            <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
             <script src="../scripts/default.js"></script>
         </footer>
 </body>
