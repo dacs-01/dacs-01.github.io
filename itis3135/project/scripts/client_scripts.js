@@ -89,3 +89,19 @@ $(document).ready(function() {
 //targest first item in list that is an a element
 $("li:first-child a").focus();
 }); // end ready
+
+/*------------------------------Automatic Slideshow-------------------------------------------*/
+$(document).ready(function() {
+    $("#slider").bxSlider({
+        auto: true,
+        slideWidth: 500,
+        slideMargin: 50,
+        captions: true,
+        randomStart: true,
+        moveSlides: 1,
+        pause: 3000,
+        pager: true,
+        pagerType: "short",
+        pagerSelector: "#id_pager"
+    });
+});

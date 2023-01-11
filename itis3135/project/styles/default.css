@@ -124,11 +124,11 @@ header, h2 {
 
 
 
-.slide_img > figcaption {
-  padding-bottom: 15px;
+.slide_img > figcaption, .slide > figcaption {
+  padding: 30px;
 }
 
-.slide_img > figure > img {
+.slide_img > figure > img,  .slide > figure > img{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -186,12 +186,13 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
   border: 3px solid #555;
 }
 
 p {
   font-size: larger;
+  padding: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -220,4 +221,43 @@ p {
 }
 .checked {
   color: orange;
+}
+
+
+#id_pager {
+	text-align: center;
+	font-size: 90%;
+	color: green;
+}
+
+#slider > li > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20%;
+  width: 100%;
+  border: 3px solid #555;
+}
+.bx-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: -43px 0;
+}
+.bx-wrapper .bx-controls-direction a {
+  display: none;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
 }

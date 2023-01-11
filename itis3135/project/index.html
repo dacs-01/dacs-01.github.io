@@ -10,10 +10,13 @@
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     </head>
     <body>
         <header>
             <h1>Kayla's Art Emporium</h1>
+            <!--Navbar creation-->
             <nav class="tab">
                 <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">Home</button>
                 <button class="tablinks" onclick="openTab(event, 'about')">About</button>
@@ -23,16 +26,26 @@
             </nav>
         </header>
         <main>
+            <!--Home page content-->
             <section id="home" class="tabcontent">
                 <h2>Welcome!</h2>
+                <!--Automatic slideshow using bxslider jQuery widget-->
+                <ul id="slider">
+                    <li><img src="images/pic3.JPG" alt="Another lovely drawing"></li>
+                    <li><img src="images/pic2.JPG" alt="Sketch of nature"></li>
+                    <li><img src="images/pic7.JPG" alt="Kayla and her lovely boyfriend"></li>
+                </ul>
+                <p id="id_pager"></p>
                 <p>
                     Welcome to my Art Emporium! I sell and take commissions to anyone that wants to acquire an art piece from me.
                     Drawing art is a huge passion of mine and I want to extend my passion for others to see for themselves.
                     I typically draw art during my free time and/or whenever I have to relieve any sort of stress that I am feeling.
                 </p>
             </section>
+            <!--About page content-->
             <section id="about" class="tabcontent">
                 <h2>About Me</h2>
+                <!--Image swap with jQuery plugin-->
                 <ul id="image_list">
                     <div class="inline">
                     <li><a href="images/Kayla1.jpeg" title="selfie of Kayla">
@@ -60,32 +73,44 @@
                     I want to prevent that as much as possible.
                 </p>
             </section>
+            <!--Gallery page content-->
             <section id="gallery" class="tabcontent">
                 <h2>My Artwork</h2>
+                <!--Slideshow carousel with simple jQuery (this code is from W3Schools https://www.w3schools.com/howto/howto_js_slideshow.asp)-->
                 <div id="slideshow">
                     <div class="slide_img fade">
-                        <figure><img src="images/pic1.JPG"></figure>
-                        <figcaption>A vibrant flower doodle</figcaption>
+                        <figure>
+                            <img src="images/pic1.JPG" alt="first drawing">
+                            <figcaption>A vibrant flower doodle</figcaption>
+                        </figure>
                     </div>
                     
                     <div class="slide_img fade">
-                        <figure><img src="images/pic2.JPG"></figure>
-                        <figcaption></figcaption>
+                        <figure>
+                            <img src="images/pic2.JPG" alt="second drawing">
+                            <figcaption>A sketch of nature</figcaption>
+                        </figure>
                     </div>
                     
                     <div class="slide_img fade">
-                        <figure><img src="images/pic3.JPG"></figure>
-                        <figcaption></figcaption>
+                        <figure>
+                            <img src="images/pic3.JPG" alt="third drawing">
+                            <figcaption>The bloom of encouragement</figcaption>
+                        </figure>
                     </div>
     
                     <div class="slide_img fade">
-                        <figure><img src="images/pic4.JPEG"></figure>
-                        <figcaption></figcaption>
+                        <figure>
+                            <img src="images/pic4.JPEG" alt="fourth drawing">
+                            <figcaption>If the Upside Down was ever colorful</figcaption>
+                        </figure>
                     </div>
     
                     <div class="slide_img fade">
-                        <figure><img src="images/pic5.JPEG"></figure>
-                        <figcaption></figcaption>
+                        <figure>
+                            <img src="images/pic5.JPEG" alt="fifth drawing">
+                            <figcaption>Cliff from Lord of the Flies</figcaption>
+                        </figure>
                     </div>
     
     
@@ -101,8 +126,10 @@
                     </div>
                 </div>
             </section>
+            <!--Review page content-->
             <section id="reviews" class="tabcontent">
                 <h2>Reviews</h2>
+                <!--Star ratings from external stylesheet-->
                 <p class="reviews">
                     Joe Schmoe - 11/21/2022 
                     <span class="fa fa-star checked"></span>
@@ -148,16 +175,38 @@
                 <p>A: I would much prefer to hand draw my projects over anything else.</p>
                 <br>
 
+                <!--jQuery Modal popup that gets input from user to post onto the website-->
                 <div id="ex1" class="modal">
-                    <p>Thanks for clicking. That felt good.</p>
-                    <a href="#" rel="modal:close">Close</a>
+                    <form action="#">
+                        <label class="bold">Name: </label>
+                        <input type="text" name="name" class="inputs" required placeholder="First and Last Name">
+                        <br>
+                        <select name="type">
+                            <option value="">Please select your post type</option>
+                            <option value="question">Question</option>
+                            <option value="review">Review</option>
+                        </select>
+                        <br>
+                        <p>Enter your thoughts here</p>
+                        <textarea
+                        id="comments"
+                        name="comment"
+                        placeholder="Enter your comment here...">
+                        </textarea>
+                        
+                        <br>
+                        <br>
+                        <input type="submit" class="button">
+                    </form>
+                    
                   </div>
                   
                   <!-- Link to open the modal -->
-                  <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+                  <p><button><a href="#ex1" rel="modal:open">Post a Review or Question</a></button></p>
                 <figure></figure>
 
             </section>
+            <!--Contact page with form-->
             <section id="contact" class="tabcontent">
                 <h2>Have Questions?</h2>
                 <p>
@@ -192,12 +241,13 @@
 
             
         </main>
+        <script src="scripts/HTMLInclude.js"></script>
         <script src="scripts/client_scripts.js"></script>
         <footer>
             <a href="../">Return to home page of Distinguished Cheetah - ITIS 3135</a>
             <p>Designed by <a href="cisnerostech.com">Cisneros Technologies</a> &copy; 2022</p>
-            <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            <button><a href="https://validator.w3.org/check?uri=referer">Validate HTML</a></button>
+            <button><a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a></button>
             <script src="../scripts/default.js"></script>
         </footer>
 </body>
